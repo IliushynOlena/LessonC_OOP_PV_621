@@ -119,14 +119,14 @@ public:
 int main()
 {
     Student st;
-    st.Init();
+   /* st.Init();
     st.Print();
 
     st.setX(100);
     st.setX(100);
     st.setX(100);
     
-    cout<< st.getX()<< st.getY()
+    cout<< st.getX()<< st.getY()*/
 
     st.setName("Ivan");
     st.setMark(0, 10);
