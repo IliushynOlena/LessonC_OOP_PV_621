@@ -13,13 +13,7 @@ class Student {
 	int* marks;
 	int countMark;
 public:
-	Student()
-	{
-		name = "no name";
-		age = 0;
-		marks = nullptr;
-		countMark = 0;
-	}
+	Student();
 	Student(string name, int age)
 	{
 		this->name = name;
@@ -40,22 +34,8 @@ public:
 		}
 
 	}
-	void AddMArk(int mark)
-	{
-		int* temp = new int[countMark + 1];
-		for (int i = 0; i < countMark; i++)
-		{
-			temp[i] = marks[i];
-		}
-		temp[countMark] = mark;
+	void AddMArk(int mark);//prototype function 
 
-		if (marks != nullptr)
-			delete[]marks;
-
-		marks = temp;
-		countMark++;
-
-	}
 	void Delete()
 	{
 		if (marks != nullptr)
@@ -120,3 +100,27 @@ int main()
 
 }
 
+Student::Student()
+{
+	name = "no name";
+	age = 0;
+	marks = nullptr;
+	countMark = 0;
+}
+
+void Student::AddMArk(int mark)
+{
+	int* temp = new int[countMark + 1];
+	for (int i = 0; i < countMark; i++)
+	{
+		temp[i] = marks[i];
+	}
+	temp[countMark] = mark;
+
+	if (marks != nullptr)
+		delete[]marks;
+
+	marks = temp;
+	countMark++;
+
+}
