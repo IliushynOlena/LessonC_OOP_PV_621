@@ -144,6 +144,9 @@ public:
 		this->y = newY;
 	}
 };
+
+
+
 int main()
 {
 	NewPoint<float, short> p3(1.54, 25);
