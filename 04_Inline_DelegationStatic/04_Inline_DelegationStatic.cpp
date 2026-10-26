@@ -45,13 +45,26 @@ public:
 	{
 		return count;
 	}
-	void Print()
-	{
-		cout << "Name : " << name << endl;
-		cout << "Age : " << age << endl;
-		cout << "Weight : " << weight << endl<<endl;
-	}
+	void Print();
+	void Test();
 };
+
+void Human::Print()
+{
+	cout << "Name : " << name << endl;
+	cout << "Age : " << age << endl;
+	cout << "Weight : " << weight << endl << endl;
+}
+
+void Human::Test()
+{
+	cout << "Hello" << endl;
+	cout << "Hello" << endl;
+	cout << "Hello" << endl;
+	cout << "Hello" << endl;
+	cout << "Hello" << endl;
+	cout << "Hello" << endl;
+}
 
 int Human::count = 0;
 int main()
