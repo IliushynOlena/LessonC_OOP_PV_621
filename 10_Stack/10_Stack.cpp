@@ -131,6 +131,7 @@ public:
 };
 int main()
 {
+    //FILO    --> LIFO
     Stack st(20);
    // Stack st3({ 1,5,8,9,6,7,7,8 });
     cout << "Size = " << st.GetCount() << endl;
