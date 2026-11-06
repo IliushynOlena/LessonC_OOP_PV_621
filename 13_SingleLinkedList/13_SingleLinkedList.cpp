@@ -104,7 +104,7 @@ class Vector
 	//List<Point> list;//Point* points;
 	List list;//Point* points;
 	int size;
-	void AddPoint(){list.}
+	void AddPoint(){}
 };
 int main()
 {
