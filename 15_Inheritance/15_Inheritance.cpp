@@ -40,8 +40,7 @@ public:
         cout << "Getting damage " << damage << "%" << endl;
         DecreaseHealth(damage);
         cout << "Health after damage : " << hp << "%" << endl;
-    }
-    
+    }    
 };
 //Inheritance 
 //class Child :[spetificator] Parent
