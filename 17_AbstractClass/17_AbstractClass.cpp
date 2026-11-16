@@ -161,6 +161,7 @@ int main()
 	RollCall(frog);
 	RollCall(sheep);
 	RollCall(lion);
+	sqrt(3);
 
    
 }
