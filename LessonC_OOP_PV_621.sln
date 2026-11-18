@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18_VirtualDestructor", "18_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_AggregationComposition", "19_AggregationComposition\19_AggregationComposition.vcxproj", "{93884FE0-12B6-4672-8B1B-4BCA59E70C78}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_MultyInheritance", "20_MultyInheritance\20_MultyInheritance.vcxproj", "{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{93884FE0-12B6-4672-8B1B-4BCA59E70C78}.Release|x64.Build.0 = Release|x64
 		{93884FE0-12B6-4672-8B1B-4BCA59E70C78}.Release|x86.ActiveCfg = Release|Win32
 		{93884FE0-12B6-4672-8B1B-4BCA59E70C78}.Release|x86.Build.0 = Release|Win32
+		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Debug|x64.ActiveCfg = Debug|x64
+		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Debug|x64.Build.0 = Debug|x64
+		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Debug|x86.ActiveCfg = Debug|Win32
+		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Debug|x86.Build.0 = Debug|Win32
+		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Release|x64.ActiveCfg = Release|x64
+		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Release|x64.Build.0 = Release|x64
+		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Release|x86.ActiveCfg = Release|Win32
+		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

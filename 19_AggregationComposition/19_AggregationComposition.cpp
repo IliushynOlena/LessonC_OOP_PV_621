@@ -1,6 +1,23 @@
 #include <iostream>
 using namespace std;
 
+class Document {
+	string name;
+	string format;
+	int pages;
+public:
+	Document() :name("none"), format("none"), pages(0) {}
+	Document(string n, string f, int p) :name(n), format(f), pages(p) {}
+	void ShowInfo()const
+	{
+		cout << "Name : " << name << endl;
+		cout << "Format : " << format << endl;
+		cout << "Pages : " << pages << endl;
+	}
+
+
+};
+
 enum Type{None, Standart, XL, XXL};
 class Cartridge
 {
@@ -71,6 +88,10 @@ public:
 		this->doc = doc;
 
 	}
+	void Cancel()
+	{
+		doc = nullptr;
+	}
 	~Printer()
 	{
 		if (cartridges != nullptr)delete[]cartridges;
@@ -81,8 +102,15 @@ public:
 	}
 	void PrintDocument()
 	{
-		cout << "Printing document.........." << endl;
-		doc->ShowInfo();
+		if (doc != nullptr)
+		{
+			cout << "Printing document.........." << endl;
+			doc->ShowInfo();
+		}
+		else {
+			cout << "No document" << endl;
+		}
+		
 	}
 	void PrintSettings()
 	{
@@ -99,22 +127,7 @@ public:
 	
 };
 
-class Document {
-	string name;
-	string format;
-	int pages;
-public:
-	Document() :name("none"), format("none"), pages(0) {}
-	Document(string n, string f,int p) :name(n), format(f), pages(p) {}
-	void ShowInfo()const
-	{
-		cout << "Name : " << name << endl;
-		cout << "Format : " << format << endl;
-		cout << "Pages : " << pages << endl;
-	}
 
-	
-};
 int main()
 {
 	Printer printer("HP", 300, 30, 50);
@@ -128,7 +141,9 @@ int main()
 	printer.AddDocument(&doc1);
 	printer.PrintDocument();
 
+
 	printer.AddDocument(&doc2);
+	printer.Cancel();
 	printer.PrintDocument();
 
 
