@@ -1,5 +1,14 @@
 #include <iostream>
+#include <windows.h>    
 using namespace std;
+
+void gotoxy(int x, int y)
+{
+	COORD coordinate;
+	coordinate.X = x;
+	coordinate.Y = y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coordinate);
+}
 
 class Person//abstart class
 {
@@ -51,12 +60,27 @@ public:
 	}
 };
 
+struct Point
+{
+	int x;
+	int y;
+};
 int main()
 {
+	Point start = { 5,5 };
+	Point end = { 15,15 };
+	cout << "Point start : x = " << start.x << " y = " << start.y << endl;
+
+
+	gotoxy(start.x, start.y); cout << "*";
+	gotoxy(end.x, end.y); cout << "*";
+
+
+
 	srand(time(0));
 	/*Person student("Vasia", 18);
 	student.Print();*/
-
+	/*
 	Aspirant aspirant("Petro", 20, { "Human fabrix","Animals" });
 	aspirant.Print();
 	cout << endl << endl;
@@ -72,5 +96,6 @@ int main()
 		group[i]->Print();
 		delete group[i];
 	}
+	*/
 }
 
