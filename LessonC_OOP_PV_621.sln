@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_AggregationComposition",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_MultyInheritance", "20_MultyInheritance\20_MultyInheritance.vcxproj", "{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21_Exceptions", "21_Exceptions\21_Exceptions.vcxproj", "{2D737E57-7FB6-41E5-BA03-1AC6DAE684EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Release|x64.Build.0 = Release|x64
 		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Release|x86.ActiveCfg = Release|Win32
 		{1943CD38-7468-4AA7-BDC8-1B6684CF6D44}.Release|x86.Build.0 = Release|Win32
+		{2D737E57-7FB6-41E5-BA03-1AC6DAE684EB}.Debug|x64.ActiveCfg = Debug|x64
+		{2D737E57-7FB6-41E5-BA03-1AC6DAE684EB}.Debug|x64.Build.0 = Debug|x64
+		{2D737E57-7FB6-41E5-BA03-1AC6DAE684EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{2D737E57-7FB6-41E5-BA03-1AC6DAE684EB}.Debug|x86.Build.0 = Debug|Win32
+		{2D737E57-7FB6-41E5-BA03-1AC6DAE684EB}.Release|x64.ActiveCfg = Release|x64
+		{2D737E57-7FB6-41E5-BA03-1AC6DAE684EB}.Release|x64.Build.0 = Release|x64
+		{2D737E57-7FB6-41E5-BA03-1AC6DAE684EB}.Release|x86.ActiveCfg = Release|Win32
+		{2D737E57-7FB6-41E5-BA03-1AC6DAE684EB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

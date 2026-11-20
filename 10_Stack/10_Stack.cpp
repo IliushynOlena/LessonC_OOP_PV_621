@@ -146,6 +146,8 @@ int main()
     {
         cout << "Delete element : " << st.Pop() << endl;
     }
+    //pop
+    //peek
     cout << "Size = " << st.GetCount() << endl;
 
 
