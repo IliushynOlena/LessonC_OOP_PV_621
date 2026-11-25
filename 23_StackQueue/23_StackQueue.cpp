@@ -2,6 +2,7 @@
 #include <stack>
 #include <queue>
 #include <string>
+#include <fstream>
 using namespace std;
 class User
 {
@@ -22,8 +23,45 @@ ostream& operator<<(ostream& os, const User& user)
 	os << "Name: " << user.name << " Rating: " << string(user.rating, '*');
 	return os;
 }
+class Train
+{
+	struct Time { int h, m, s; };
+	int number;
+	Time time;
+	string destination;
+public:
+	void Save()
+	{
+		ofstream out("Trains.txt");
+		out << number;
+		out << time.h;
+		out << time.m;
+		out << time.s;
+		out << destination;
+		out.close();
+
+	}
+};
+class Railway {
+	vector<Train> trains;
+	void Save()
+	{
+		
+		for (int i = 0; i < trains.size(); i++)
+		{
+			trains[i].Save();
+		}
+
+	}
+};
 int main()
 {
+	
+
+
+
+
+
 	///////////////////// Stack
 	
 
